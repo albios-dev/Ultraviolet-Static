@@ -1,25 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
-    />
-    <title>Ultraviolet | Sophisticated Web Proxy</title>
-    <meta
-      name="description"
-      content="Ultraviolet is a highly sophisticated proxy used for evading internet censorship or accessing websites in a controlled sandbox using the power of service-workers. Unblock sites today!"
-    />
-    <meta
-      name="keywords"
-      content="proxy, web proxy, ultraviolet, service workers, unblock websites, unblock chromebook, free web proxy, proxy list, proxy sites, un block chromebook, online proxy, proxy server, proxysite, proxy youtube, bypass securly, bypass iboss, bypass lightspeed filter, holy unblocker, chromebooks, titanium network, unblock youtube, youtube proxy, unblocked youtube, youtube unblocked"
-    />
-    <meta
-      name="theme-color"
-      media="(prefers-color-scheme: dark)"
-      content="#434c5e"
-    />
+   <script
+			type="module"
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+		></script>
+    <title>RProxy</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <meta name="googlebot" content="index, follow, snippet" />
     <link rel="shortcut icon" content="favicon.ico" />
     <link rel="stylesheet" href="index.css" />
@@ -61,60 +52,75 @@
       }
     </script>
   </head>
+<style>
+      body {
+        background-color: #282828;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        color: #ffffff;
+        overflow: hidden;
+      }
 
+      /* Style for the input box container */
+      .input-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+      }
+
+      /* Style for the input box */
+input[type="text"] {
+	width: 300px;
+	height: 50px;
+	border-radius: 25px;
+	border: 3px solid #ff6666;
+	background-color: #282828; /* darker input box background color */
+	color: #ffffff; /* white text color */
+	padding: 10px;
+	font-size: 24px;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center; /* center text */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1)
+}
+
+      /* Style for the RProxy text */
+      .rproxy-text {
+        font-size: 60px;
+        font-weight: bold;
+        color: #ff6666;
+        text-align: center;
+        margin-top: 50px;
+        text-shadow: 0 0 10px #000000;
+      }
+
+      /* Style for the bottom links */
+      .bottom-links {
+        width: 100%;
+        position: absolute;
+        bottom: 10px;
+        text-align: center;
+      }
+
+      .bottom-links a {
+        color: #ffffff;
+        text-decoration: none;
+        margin: 0 10px;
+      }
+    </style>
+  </head>
   <body>
-    <div
-      title="Ultraviolet Logo"
-      class="flex-center logo-wrapper header-center"
-    >
-      <img class="logo" src="uv.png" alt="Ultraviolet" />
-      <h1>Ultraviolet | TN</h1>
+    <div class="input-container">
+      <h1 class="rproxy-text">RProxy</h1>
+     <input id="uv-address" type="text" placeholder="surf the web">
     </div>
-    <div class="flex-center desc">
-      <p>
-        Ultraviolet is highly sophisticated proxy used for evading internet
-        censorship.
-      </p>
+    <div class="bottom-links">
+      <a href="/tos.html">TOS</a>
+      <a href="#">Privacy Policy</a>
+      <a href="https://discord.gg/MHPHKTzfuR">Rblocker</a>
     </div>
-
-    <form id="uv-form" class="flex-center">
-      <input
-        id="uv-search-engine"
-        value="https://www.google.com/search?q=%s"
-        type="hidden"
-      />
-      <input id="uv-address" type="text" placeholder="Search the web freely" />
-    </form>
-    <div class="desc left-margin">
-      <p id="uv-error"></p>
-      <pre id="uv-error-code"></pre>
-    </div>
-    <footer>
-      <a
-        title="The TitaniumNetwork GitHub organization"
-        href="https://github.com/titaniumnetwork-dev"
-        >TitaniumNetwork</a
-      >
-      <a title="The TitaniumNetwork Discord" href="https://discord.gg/unblock"
-        >Discord</a
-      >
-      <a
-        title="The TompHTTP GitHub organization"
-        href="https://github.com/tomphttp"
-        >TompHTTP</a
-      >
-      <a
-        title="The official deployment repository for Ultraviolet"
-        href="https://github.com/titaniumnetwork-dev/Ultraviolet-App"
-        >GitHub</a
-      >
-      <a
-        title="License information"
-        href="credits.html"
-        style="margin-left: auto"
-        >Credits</a
-      >
-      <span>Ultraviolet &copy; TN 2023</span>
-    </footer>
+   
   </body>
+ 
 </html>
