@@ -1,58 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-   <script
-			type="module"
-			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-		></script>
-		<script
-			nomodule
-			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-		></script>
+    <meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
     <title>RProxy</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <meta name="googlebot" content="index, follow, snippet" />
-    <link rel="shortcut icon" content="favicon.ico" />
-    <link rel="stylesheet" href="index.css" />
-    <script src="uv/uv.bundle.js" defer></script>
-    <script src="uv/uv.config.js" defer></script>
-    <script src="register-sw.js" defer></script>
-    <script src="search.js" defer></script>
-    <script src="index.js" defer></script>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "What is Ultraviolet (Web Proxy)?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Highly sophisticated proxy used for evading internet censorship or accessing websites in a controlled sandbox using the power of service-workers and more!"
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How do I unblock sites using Ultraviolet?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Simply head to an official site featuring Ultraviolet such as Holy Unblocker or Incognito! You can also self-host Ultraviolet on your own web server for maximum privacy."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What if Ultraviolet is blocked or not working?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Join the Titanium Network Discord at discord.gg/unblock!"
-            }
-          }
-        ]
-      }
-    </script>
-  </head>
-<style>
+    <style>
       body {
         background-color: #282828;
         font-family: 'Montserrat', sans-serif;
@@ -111,16 +66,18 @@ input[type="text"] {
     </style>
   </head>
   <body>
-    <div class="input-container">
+    <form class="input-container">
       <h1 class="rproxy-text">RProxy</h1>
-     <input id="uv-address" type="text" placeholder="surf the web">
-    </div>
+     <input type="text" placeholder="surf the web">
+    </form>
     <div class="bottom-links">
       <a href="/tos.html">TOS</a>
       <a href="#">Privacy Policy</a>
       <a href="https://discord.gg/MHPHKTzfuR">Rblocker</a>
     </div>
-   
+    <script src="uv/uv.bundle.js"></script>
+    <script src="uv/uv.config.js"></script>
+    <script src="index.js"></script>
   </body>
- 
 </html>
+
